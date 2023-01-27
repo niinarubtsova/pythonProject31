@@ -1,3 +1,4 @@
+from entity.base_storage import BaseStorage
 from exceptions import TooManyDifferentProducts
 
 

@@ -1,4 +1,4 @@
-from entity.courier import import Courier
+from entity.courier import Courier
 from entity.request import Request
 from entity.shop import Shop
 from entity.store import Store

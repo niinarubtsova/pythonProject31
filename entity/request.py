@@ -1,3 +1,5 @@
+from typing import Dict
+
 from entity.abstract_storage import AbstractStorage
 from exceptions import  InvalidRequest, InvalidStorageName
 

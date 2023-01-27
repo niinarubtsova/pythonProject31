@@ -1,5 +1,7 @@
+from typing import Dict
 
-
+from entity.abstract_storage import AbstractStorage
+from entity.request import Request
 
 
 class Courier:
