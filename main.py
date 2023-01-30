@@ -5,22 +5,27 @@ from entity.store import Store
 from exceptions import CourierError, RequestError
 
 
-store = Store(items={
+
+store = Store(items={})
+shop = Shop(items={})
+
+store.items = {
     "печенька": 25,
     "собачка": 25,
     "елка": 25,
     "пончик": 3,
     "зонт": 1,
     "ноутбук": 1,
-})
 
-shop = Shop(items={
+}
+
+shop.items ={
     "печенька": 2,
     "собачка": 2,
     "елка": 2,
     "зонт": 1,
     "пончик": 1,
-})
+}
 
 storages = {
     "магазин": shop,
@@ -34,7 +39,7 @@ def main():
     while True:
         # Todo: Вывести содержимое складов
         for storage_name in storages:
-            print(f'Сейчас в {storage_name}:\n {storages[storage_name].get_items()}')
+            print(f'Сейчас в {storage_name}:\n {storages[storage_name].items}')
 
         user_input = input(
             'Введите запрос в формате "Доставить 3 печенька из склад в магазин"\n'

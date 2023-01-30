@@ -36,9 +36,16 @@ class BaseStorage(AbstractStorage):
          return self.__capacity - sum(self.__items.values())
 
 
-    def get_items(self) -> Dict[str, int]:
+    #def get_items(self) -> Dict[str, int]:
+    #    return self.__items
+
+    @property
+    def items(self):
         return self.__items
 
+    @items.setter
+    def items(self, new_data):
+        self.__items = new_data
 
 
     def get_unique_items_count(self):
