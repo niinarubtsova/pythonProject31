@@ -37,7 +37,7 @@ def main():
             print(f'Сейчас в {storage_name}:\n {storages[storage_name].get_items()}')
 
         user_input = input(
-            'Введите запрос в формате "Доставить 3 печеньки из склада в магазин"\n'
+            'Введите запрос в формате "Доставить 3 печенька из склад в магазин"\n'
             'Введите "стоп" или "stop", если хотите закончить:\n'
         )
 
@@ -51,7 +51,7 @@ def main():
             continue
 
         # Todo: запустить доставку
-        courier = entity.courier.Courier(
+        courier = Courier(
             request=request,
             storages=storages,
         )

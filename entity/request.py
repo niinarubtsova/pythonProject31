@@ -1,11 +1,11 @@
 from typing import Dict
 
 from entity.abstract_storage import AbstractStorage
-from exceptions import  InvalidRequest, InvalidStorageName
+from exceptions import InvalidRequest, InvalidStorageName
 
 
 class Request:
-    def __init__(self, request: str, storages: Dict[str, AbstractStorage]) -> object:
+    def __init__(self, request: str, storages: Dict[str, AbstractStorage]) :
         # Todo: Разделить строку по пробелам
         splitted_request = request.lower().split(' ')
         if len(splitted_request) != 7:
